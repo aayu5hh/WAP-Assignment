@@ -1,4 +1,4 @@
-img {
+.images {
   height: 300px;
   width : 300px;
 }
@@ -20,4 +20,16 @@ body {
 
 .a-imdb {
   color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p::first-letter {
+  font-size: 1.5em;
 }
