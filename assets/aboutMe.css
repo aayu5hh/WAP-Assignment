@@ -1,0 +1,23 @@
+img {
+  height: 300px;
+  width : 300px;
+}
+
+h1, h2 {
+  color: #24acd1;
+  font-family: Arial;
+}
+
+body {
+  background-color: #474340;
+  color: #ffffff;
+  font-family: Verdana;
+}
+
+.text-bg {
+  color: #e8e11e;
+}
+
+.a-imdb {
+  color: red;
+}

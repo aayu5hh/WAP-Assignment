@@ -1,0 +1,17 @@
+img {
+  border-radius: 50%;
+}
+
+.name-label {
+  float: left;
+}
+
+.ul-label {
+  clear: both;
+}
+
+.about-me {
+  display: inline-block;
+  margin-top: 35px;
+  margin-left: 15px;
+}
