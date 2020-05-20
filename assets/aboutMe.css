@@ -33,3 +33,13 @@ a:hover {
 p::first-letter {
   font-size: 1.5em;
 }
+
+.p-movie {
+  display: inline-block;
+  font-size: 12px;
+  text-indent: 45px;
+}
+
+.movie-font {
+  font-size: 14px;
+}
