@@ -1,9 +1,6 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-} */
-
-* {
   font-family: Verdana, Tahoma, sans-serif;
 }
 
@@ -21,6 +18,8 @@
 .movie-name {
   text-align: center;
   text-shadow: 3px 3px #999999;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .main-content{
@@ -32,7 +31,8 @@
 }
 .left-aside{
     width: 550px;
-    float: left;
+    display: table-cell;
+    vertical-align: top;
 }
 .left-aside section:first-child{
     background-image: url("./../images/rbg.png");
@@ -44,10 +44,25 @@
 }
 nav.right-nav{
     width: 250px;
-    float: right;
+    display: table-cell;
+    vertical-align: top;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+    border-radius: 0px 17px 0px 0px;
 }
 nav.right-nav img:first-child{
     border-radius: 0px 17px 0px 0px;
+}
+
+.validators {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.movie-details {
+  padding: 10px;
 }
 .rating-txt{
     font-size: 48pt;
@@ -70,6 +85,22 @@ nav.right-nav img:first-child{
     min-height: 24px;
 }
 
+.top-maincontent {
+  display: table;
+}
+
+.color-green {
+  background-color: #A2B964;
+}
+
+.btm-maincontent {
+  padding-top: 5px;
+  padding-bottom:5px;
+  font-size: 8pt;
+  border-radius: 0px 0px 17px 17px;
+}
+
+
 .clear {
   clear: both;
 }
@@ -81,7 +112,17 @@ nav.right-nav img:first-child{
 
 .critic-cmt {
   font-size: 8pt;
+  margin-top: 7pt;
   margin-bottom: 20pt;
+}
+
+.movie-details dl dt {
+  font-weight: bold;
+}
+
+.movie-details dl dd{
+  margin-left: 20pt;
+  margin-bottom: 10pt;
 }
 
 .mt-15 {
