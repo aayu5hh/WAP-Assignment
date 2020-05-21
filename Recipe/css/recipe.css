@@ -46,3 +46,7 @@ a {
 .make-bold {
   font-weight: bold;
 }
+
+.list-image {
+  list-style-image: url('./../images/pie_icon.gif');
+}
