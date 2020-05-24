@@ -1,0 +1,17 @@
+.fieldset {
+  border: 1px dashed;
+  border-radius: 5px;
+}
+
+.legend {
+  background-color: powderblue;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.my-input label {
+
+}
