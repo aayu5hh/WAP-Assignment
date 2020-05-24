@@ -15,18 +15,149 @@
           <legend class="legend">Personal details</legend>
 
           <div class="row mb-15 mt-15">
-            <div class="my-input w-50">
-              <label>First Name</label>
+            <div class="my-input w-50 float-left">
+              <label class="required">First Name</label>
               <input type="text" name="first_name" placeholder="First Name">
             </div>
-
-            <div class="">
-
+            <div class="my-input w-50 float-left">
+              <label class="required">Last Name</label>
+              <input type="text" name="last_name" placeholder="Last Name">
             </div>
           </div>
 
+          <div class="row mb-15">
+            <div class="my-input w-50 float-left">
+              <label class="required">Email</label>
+              <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="my-input w-50 float-left">
+              <label class="required">Phone No.</label>
+              <input type="text" name="phone" placeholder="Phone Number">
+            </div>
+          </div>
+
+          <div class="row mb-15">
+            <div class="my-input w-50 float-left">
+              <label class="required">Gender</label>
+              <select name="gender">
+                <option value="">Select Gender</option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Other</option>
+              </select>
+            </div>
+            <div class="my-input w-50 float-left">
+              <label class="required">SSN</label>
+              <input type="text" name="ssn" placeholder="Social Security Number">
+            </div>
+          </div>
+
+          <div class="row mb-30">
+            <div class="my-input w-50 float-left">
+              <label class="required">Date of Birth</label>
+              <input type="date" name="dob">
+            </div>
+          </div>
         </fieldset>
+
+        <fieldset class="p-15 mb-15 fieldset">
+          <legend class="legend">Billing Address</legend>
+
+          <div class="row mb-15 mt-15">
+            <div class="my-input w-50 float-left">
+              <label class="required">Street</label>
+              <input type="text" name="street" placeholder="Street Address">
+            </div>
+            <div class="my-input w-50 float-left">
+              <label class="required">City</label>
+              <input type="text" name="city" placeholder="City">
+            </div>
+          </div>
+
+          <div class="row mb-15 mt-15">
+            <div class="my-input w-50 float-left">
+              <label class="required">State</label>
+              <input type="text" name="state" placeholder="State">
+            </div>
+            <div class="my-input w-50 float-left">
+              <label class="required">ZipCode</label>
+              <input type="text" name="zip" placeholder="Zip Code">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="p-15 mb-15 fieldset">
+          <legend class="legend">Shipping Address</legend>
+
+          <div class="row mb-15 mt-15">
+            <div class="my-input w-50 float-left">
+              <label class="required">Street</label>
+              <input type="text" name="street" placeholder="Street Address">
+            </div>
+            <div class="my-input w-50 float-left">
+              <label class="required">City</label>
+              <input type="text" name="city" placeholder="City">
+            </div>
+          </div>
+
+          <div class="row mb-15 mt-15">
+            <div class="my-input w-50 float-left">
+              <label class="required">State</label>
+              <input type="text" name="state" placeholder="State">
+            </div>
+            <div class="my-input w-50 float-left">
+              <label class="required">ZipCode</label>
+              <input type="text" name="zip" placeholder="Zip Code">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="p-15 mb-15 fieldset">
+          <legend class="legend">Payment Info</legend>
+
+          <div class="row mb-15 mt-15">
+            <div class="my-input w-50 float-left">
+              <label class="required">Select Payment Method</label>
+              <select name="payment">
+                <option value="cc">Credit Card</option>
+                <option value="vc">Visa Card</option>
+                <option value="cash">Cash</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="p-15 mb-15 fieldset">
+          <legend class="legend">Agreement</legend>
+
+          <div class="row mb-15 mt-15">
+            <div class="w-50 float-left">
+              <label>
+              <input type="checkbox" name="agree">
+              <strong> I agree with all terms and conditions</strong>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="row">
+          <div class="p-15">
+            <button class="btn-black" type="submit" name="submitButton">Submit</button>
+          </div>
+        </div>
       </form>
+
+      <div class="validator-section">
+    		<p>
+    			<a href="https://validator.w3.org/check/referer">
+    				<img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Validate">
+    			</a>
+    			<br>
+    			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+    				<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Validate">
+    			</a>
+    		</p>
+    	</div>
     </div>
   </body>
 </html>
