@@ -1,12 +1,7 @@
-
 let acctInfoList = [];
 
 window.onload = function() {
-  document.getElementById("button").onclick = function() {
-
-    accountModule.createAccount();
-    accountModule.displayInfo();
-  };
+  document.getElementById("button").onclick = buttonHandler;
 };
 
 let accountModule = (function() {
@@ -16,22 +11,27 @@ let accountModule = (function() {
   let createAccount = function() {
     acctName = document.getElementById("accountName").value;
     depositAmt = document.getElementById("amount").value;
-
-    acctInfoList.push({
-      accountName: acctName,
-      Balance: depositAmt
-    });
   };
 
-  let displayInfo = function() {
-    document.getElementById("displayArea").value = "";
-    for(let acct of acctInfoList) {
-      document.getElementById("displayArea").value += `Account name:  ${acct.accountName},  Balance:  ${acct.Balance}\n`;
+  let getAccountInfo = function() {
+    return {
+      accountName: acctName,
+      Balance: depositAmt
     };
   };
 
   return {
     createAccount: createAccount,
-    displayInfo: displayInfo
+    getAccountInfo: getAccountInfo
   };
 })();
+
+function buttonHandler() {
+  accountModule.createAccount()
+  acctInfoList.push(accountModule.getAccountInfo());
+
+  document.getElementById("displayArea").value = "";
+  for (let acct of acctInfoList) {
+    document.getElementById("displayArea").value += `Account name:  ${acct.accountName},  Balance:  ${acct.Balance}\n`;
+  };
+};
