@@ -32,6 +32,7 @@ function buttonHandler() {
 
   document.getElementById("displayArea").value = "";
   for (let acct of acctInfoList) {
-    document.getElementById("displayArea").value += `Account name:  ${acct.accountName},  Balance:  ${acct.Balance}\n`;
+    document.getElementById("displayArea").value +=
+    `Account name:  ${acct.accountName},  Balance:  ${acct.Balance}\n`;
   };
 };
