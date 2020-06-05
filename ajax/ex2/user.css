@@ -15,6 +15,17 @@
   margin-top: 5px;
 }
 
-.myCmt {
+#myCmt {
   display: block;
+}
+
+.commentDiv {
+  padding: 8px;
+  border: 2px solid gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#submit {
+  margin-top: 5px;
 }
