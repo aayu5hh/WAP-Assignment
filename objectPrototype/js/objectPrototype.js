@@ -1,4 +1,4 @@
-let bikeModule = (function() {
+(function() {
   "use strict";
   let createBicyclePrototype = function() {
     return {

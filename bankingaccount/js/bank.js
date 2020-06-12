@@ -1,38 +1,40 @@
-let acctInfoList = [];
+(function() {
+  let acctInfoList = [];
 
-window.onload = function() {
-  document.getElementById("button").onclick = buttonHandler;
-};
-
-let accountModule = (function() {
-  let acctName;
-  let depositAmt;
-
-  let createAccount = function() {
-    acctName = document.getElementById("accountName").value;
-    depositAmt = document.getElementById("amount").value;
+  window.onload = function() {
+    document.getElementById("button").onclick = buttonHandler;
   };
 
-  let getAccountInfo = function() {
-    return {
-      accountName: acctName,
-      Balance: depositAmt
+  let accountModule = (function() {
+    let acctName;
+    let depositAmt;
+
+    let createAccount = function() {
+      acctName = document.getElementById("accountName").value;
+      depositAmt = document.getElementById("amount").value;
     };
-  };
 
-  return {
-    createAccount: createAccount,
-    getAccountInfo: getAccountInfo
-  };
+    let getAccountInfo = function() {
+      return {
+        accountName: acctName,
+        Balance: depositAmt
+      };
+    };
+
+    return {
+      createAccount: createAccount,
+      getAccountInfo: getAccountInfo
+    };
+  })();
+
+  function buttonHandler() {
+    accountModule.createAccount()
+    acctInfoList.push(accountModule.getAccountInfo());
+
+    document.getElementById("displayArea").value = "";
+    for (let acct of acctInfoList) {
+      document.getElementById("displayArea").value +=
+      `Account name:  ${acct.accountName},  Balance:  ${acct.Balance}\n`;
+    }
+  }
 })();
-
-function buttonHandler() {
-  accountModule.createAccount()
-  acctInfoList.push(accountModule.getAccountInfo());
-
-  document.getElementById("displayArea").value = "";
-  for (let acct of acctInfoList) {
-    document.getElementById("displayArea").value +=
-    `Account name:  ${acct.accountName},  Balance:  ${acct.Balance}\n`;
-  };
-};
